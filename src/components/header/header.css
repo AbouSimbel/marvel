@@ -1,0 +1,30 @@
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  height: 60px;
+  align-items: center;
+  background-color: #ED161F;
+}
+
+.header img {
+  height: 60px;
+}
+
+.header ul {
+  display: flex;
+  border: solid 2px white;
+  margin: 0 50px;
+  background-color: #ED161F;
+}
+
+.header nav li span {
+  margin: 0 50px;
+  color: inherit;
+  color: white;
+  font-size: 32px;
+  background-color: #ED161F;
+}
+

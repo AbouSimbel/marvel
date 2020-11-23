@@ -1,0 +1,41 @@
+.char-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 7px rgb(0, 0, 27);
+  display: flex;
+  width: 310px;
+  margin:35px 40px;
+  box-shadow: 0 2px 5px 5px white;
+  background-color: black;
+}
+
+.char-card img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.chard-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-family: 'Architects Daughter', cursive;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.char-card .description {
+  text-decoration: inherit;
+  color: white;
+  font-family: 'comic';
+  width: 300px;
+  font-family: 'Handlee', cursive;
+}
+

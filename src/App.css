@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+#root {
+  background-image: url("./assets/img/marvels.jpeg");
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*HOME PAGE*/
+
+.card-container {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.next-page,
+.previous-page {
+  position: -webkit-sticky;
+  position: sticky;
+  top: calc(100vh/2);
+  margin: 0 20px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home-page img {
+  width: 100px;
+  height: 100px;
+}
+
+
+/* PAGE COMICS */
+
+.comic-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 310px;
+  color: aliceblue;
+  margin: 30px 40px;
+  font-family: 'Handlee', cursive;
+}
+
+.title {
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.comic-card img {
+  width: 300px;
+  margin-bottom: 5px;
+}
+
+.comics-page {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* PAGE CHARACTER */
+
+.character-page {
+  height: 100vh;
+  width: 85%;
+  display: flex;
+  margin: 0 auto;
+  border: dashed 2px gainsboro;
+
+}
+
+.character {
+  width:30%;
+  border: solid 2px red
+}
+
+.char-pic {
+  width: 100%;
+  position: relative !important
+}
+
+.char-comics {
+  height: 300px;
+  width:150px;
+  border: solid 2px pink
+}
+
+.char-comics img {
+  width: 150px
+}
+
+.char-comics > div {
+  height: 80px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
