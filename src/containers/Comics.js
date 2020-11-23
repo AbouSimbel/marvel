@@ -15,7 +15,7 @@ const Comics = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3100/comics?page=${page}`);
+        const response = await axios.get(`https://marvelapp-backend.herokuapp.com/comics?page=${page}`);
         setData(response.data);
         setIsLoading(false);
       } catch (error) {

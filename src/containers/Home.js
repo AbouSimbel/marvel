@@ -22,7 +22,7 @@ const Home = () => {
 useEffect(() => {
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:3100/characters?page=${page}`);
+      const response = await axios.get(`https://marvelapp-backend.herokuapp.com/characters?page=${page}`);
       setData(response.data)
       setIsLoading(false);
     } catch (error) {

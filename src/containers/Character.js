@@ -17,7 +17,7 @@ console.log(location);
 
 useEffect(() => {
   const fetchData = async () => {
-    const response = await Axios.get(`http://localhost:3100/character/${id}`);
+    const response = await Axios.get(`https://marvelapp-backend.herokuapp.com/character/${id}`);
     setData(response.data)
     setIsLoading(false);
   }
