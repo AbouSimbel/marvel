@@ -9,13 +9,17 @@ const Header = () => {
     <div className='header'>
       <div>
       <img src={logo} alt=""/>
+        <button>LOGIN</button>
+        <button>SIGNUP</button>
+      <div>
+      </div>
       </div>
       <nav>
         <ul>
-        <li><Link to="/comics"><span>COMICS</span></Link></li>
-        <li><Link to="/characters"><span>PERSONNAGES</span></Link></li>
-        <li><Link><span>FAVORIS</span></Link></li>
-      </ul>
+          <li><Link to="/comics"><span>COMICS</span></Link></li>
+          <li><Link to="/characters"><span>PERSONNAGES</span></Link></li>
+          <li><Link><span>FAVORIS</span></Link></li>
+        </ul>
       </nav>
 
 

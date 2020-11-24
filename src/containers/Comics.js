@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "../components/header/Header";
-import "../App.css"
-
+import "../App.css";
+import loading from "../assets/img/loading.gif";
 
 // Comics page :
-
 const Comics = () => {
 
   const [data, setData] = useState();
@@ -25,9 +24,11 @@ const Comics = () => {
     fetchData();
   }, [page])
 
-
   return isLoading ? (
-    <div>En cours de chargement</div>
+    <div className="loading">
+      <img src={loading} alt=""/>
+      <span>LOADING</span>
+    </div>
   ) : (
     <>
     <Header/>

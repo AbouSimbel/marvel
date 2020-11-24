@@ -3,6 +3,7 @@ import Home from "./containers/Home";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Comics from './containers/Comics';
 import Character from './containers/Character';
+import SignUp from './containers/SignUp';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
 
       <Route path="/comics">
         <Comics/>
+      </Route>
+
+      <Route path="/signup">
+        <SignUp/>
       </Route>
 
       <Route path="/">

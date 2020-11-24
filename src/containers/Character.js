@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/header/Header";
 import { useParams, useLocation } from "react-router-dom";
-import Axios from "axios";
+import axios from "axios";
 import scratch from "../assets/img/scratch.png"
 
 const Character = () => {
@@ -17,7 +17,7 @@ console.log(location);
 
 useEffect(() => {
   const fetchData = async () => {
-    const response = await Axios.get(`https://marvelapp-backend.herokuapp.com/character/${id}`);
+    const response = await axios.get(`https://marvelapp-backend.herokuapp.com/character/${id}`);
     setData(response.data)
     setIsLoading(false);
   }
